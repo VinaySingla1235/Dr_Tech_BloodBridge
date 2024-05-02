@@ -29,8 +29,8 @@ const Navbar = (props) => {
                     <Link to="/">
                         <div className="flex items-center justify-between">
                             <img
-                                className="h-14 w-auto ml-6"
-                                src={logo}
+                                className="h-8 w-auto ml-6"
+                                src="https://shreethemes.in/doctris/layouts/assets/images/favicon.ico"
                                 draggable={false}
                                 alt="Your Company"
                             />
