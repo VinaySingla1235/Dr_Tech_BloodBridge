@@ -3,7 +3,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import data from "../../assets/data.json";
 import AuthContext from "../context/AuthContext";
-import axios from "../Api";
+import axios from "axios";
 import mapboxgl from "mapbox-gl";
 import "./map.css";
 
@@ -55,6 +55,7 @@ const Auth = (props) => {
 
   const signUp = async (e) => {
     e.preventDefault();
+    
     var formData;
     if (handle == "bank") {
       formData = {
@@ -96,13 +97,14 @@ const Auth = (props) => {
         address: address,
       };
     }
-
+    console.log("sending request");
     await axios
       .post(`/auth/${handle}`, formData, { withCredentials: true })
       .then(
-        async (res) => {},
-        (err) => alert(err.response.data.errorMessage)
+          async (res) => {},
+        (err) => alert(err.response.data.errorMessage+"this is custom error")
       );
+    console.log("getting logged in");
     await getLoggedIn();
     navigate(`/${handle == "bank" ? handle : "user"}/profile`);
   };

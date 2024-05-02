@@ -2,7 +2,7 @@ import React, { useState, useNavbarEffect, useContext } from "react";
 import logo from "../../assets/logo.png";
 import { Outlet, Link } from "react-router-dom";
 import DropDown from "../Util/DropDown";
-import axios from "../Api"
+import axios from "axios";
 import AuthContext from "../context/AuthContext";
 import { useEffect } from "react";
 const Navbar = (props) => {

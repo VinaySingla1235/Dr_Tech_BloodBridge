@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import data from "../../assets/data.json";
-import axios from "../Api";
-
+import axios from "axios";
 const RegisterBank = (props) => {
     const [name, setName] = useState("");
     const [organizer, setOrganizer] = useState("");

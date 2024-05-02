@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import axios from "../Api";
+import axios from "axios";
 import mapboxgl from "mapbox-gl";
 import Popup from '../Util/Popup';
 

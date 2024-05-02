@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 // register
 
 router.post("/:handle", async (req, res) => {
+    console.log("called handle route")
     try {
         // validation
         const handle = req.params.handle;

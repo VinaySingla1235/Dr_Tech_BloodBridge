@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "../Api";
+import axios from "axios";
 import CampEdit from "./CampEdit";
 
 const Camps = () => {

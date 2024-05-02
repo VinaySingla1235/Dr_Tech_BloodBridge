@@ -3,6 +3,7 @@ const auth = require("../middleware/auth");
 const { User, BloodBank, Donations, Requests, Camp } = require("../models/models");
 
 router.post("/:handle", auth, async (req, res) => {
+    console.log("bank router");
     try {
         const filter = req.params.handle == "bank" ? {} : { password: 0, requests: 0, donations: 0, stock: 0, __v: 0 };
         const banks = await BloodBank.find(req.body, filter);

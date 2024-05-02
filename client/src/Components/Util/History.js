@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Popup from './Popup'
-import axios from "../Api"
+import axios from "axios";
 import Status from './Status'
 
 const History = (props) => {

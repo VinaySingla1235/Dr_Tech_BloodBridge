@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from "../Api"
+import axios from "axios";
 
 const Status = (props) => {
     const [status, setStatus] = useState(props.status);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import data from "../../assets/data.json";
-import axios from "../Api";
+import axios from "axios";
 
 const Banks = () => {
 

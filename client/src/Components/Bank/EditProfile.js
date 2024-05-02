@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import data from "../../assets/data.json";
 import { useParams } from "react-router-dom";
-import axios from "../Api";
+import axios from "axios";
 import AuthContext from "../context/AuthContext";
 import mapboxgl from "mapbox-gl";
 

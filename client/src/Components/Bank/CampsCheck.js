@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import axios from "../Api";
+import axios from "axios";
 
 const CampsCheck = (props) => {
     const [edit, setEdit] = useState(true);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../assets/data.json";
-import axios from "../Api";
+import axios from "axios";
 import BanksSearch from "./BanksSearch";
 import AuthContext from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
